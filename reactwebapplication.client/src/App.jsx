@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import { Button } from '@progress/kendo-react-buttons';
 
 function App1() {
     const [forecasts, setForecasts] = useState();
@@ -77,6 +78,7 @@ function App2() {
 
     return (
         <div>
+            <Button>Click me</Button>
             <h1 id="tabelLabel">Hello World App2</h1>
             <p>This component demonstrates fetching data from the server.</p>
             {contents}
